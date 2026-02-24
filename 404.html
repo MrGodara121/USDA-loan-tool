@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - USDA Loan Tool</title>
+    <meta name="description" content="Sorry, the page you're looking for doesn't exist. Check your USDA loan eligibility with our free calculator.">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <?php include 'includes/header.php'; ?>
+    
+    <main class="error-page">
+        <div class="container">
+            <div class="error-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h1>404 - Page Not Found</h1>
+                <p>Sorry, the page you're looking for doesn't exist or has been moved.</p>
+                
+                <div class="error-actions">
+                    <a href="/" class="btn-primary">Go to Homepage</a>
+                    <a href="/#calculator" class="btn-secondary">Check Your Eligibility</a>
+                </div>
+                
+                <div class="error-help">
+                    <h3>Need help finding something?</h3>
+                    <ul>
+                        <li><a href="/state/texas">Texas USDA Loan Guide</a></li>
+                        <li><a href="/blog/">USDA Loan Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <?php include 'includes/footer.php'; ?>
+    
+    <style>
+        .error-page {
+            padding: 4rem 0;
+            text-align: center;
+            min-height: 60vh;
+        }
+        .error-content i {
+            font-size: 5rem;
+            color: #2e7d32;
+            margin-bottom: 2rem;
+        }
+        .error-content h1 {
+            margin-bottom: 1rem;
+        }
+        .error-content p {
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background: #2e7d32;
+            color: white;
+        }
+        .btn-secondary {
+            border: 2px solid #2e7d32;
+            color: #2e7d32;
+        }
+        .error-help {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .error-help ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        .error-help li {
+            margin: 0.5rem 0;
+        }
+        .error-help a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+    </style>
+</body>
+</html>
