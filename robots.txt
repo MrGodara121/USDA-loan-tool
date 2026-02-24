@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /premium/checkout
+Disallow: /api/
+Disallow: /includes/
+Disallow: /cache/
+
+Sitemap: https://usdaloantool.com/sitemap.xml
+Host: https://usdaloantool.com
